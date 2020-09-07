@@ -1,0 +1,59 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    height: 80px;
+}
+
+.NavButtons {
+    background-color: white;
+    border: solid 2px blue;
+    color: blue;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-family: Verdana;
+    font-size: 20px;
+}
+.NavButtons:hover {
+    background-color:blue;
+    border: solid 2px white;
+    color: white;
+    font-size: 23px;
+}
+
+.Component_Home{
+    display: block;
+    height: auto;
+    margin: 30px ;
+    background-color:rgb(87, 87, 87);
+    border-radius: 25px;
+    border-right: solid 9px rgb(0, 0, 0);
+    border-bottom: solid 9px black;
+    border-left: solid 4px black;
+    border-top: solid 4px  black;
+    
+}
+.search {
+    display: inline;
+    margin: 9px 5px 5px 5px ;
+    width: 250px;
+    height: 35px;
+    border: solid 1px grey;
+    border-radius: 25px;
+    padding: 10px;
+}
+.MapCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(87, 87, 87);
+}
+.Card {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: rgb(147, 147, 255);
+    border:solid 2px rgb(0, 0, 0);
+}
