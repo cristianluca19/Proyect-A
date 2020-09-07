@@ -7,7 +7,6 @@ export default function Search(){
     const FunctionBusqueda = e => {
         setbusqueda(e.target.value);
     }
-    console.log(busqueda);
     return(
         <div>
             <input onChange={FunctionBusqueda} id="searchBar" type="text" className="search" placeholder='Search ...' />

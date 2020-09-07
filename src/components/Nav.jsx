@@ -6,7 +6,10 @@ import './Components.css'
 export default function Nav() {
     return (
         <nav className="navbar navbar-dark bg-dark" >
-            <a class="navbar-brand " >Developer-App</a>
+            <Link to='/' >
+                <a class="navbar-brand " >Rick and Morty </a>
+            </Link>
+            
             <Link to='/Home' >
                 <button className='NavButtons' >Home</button>
             </Link>

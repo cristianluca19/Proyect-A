@@ -21,23 +21,28 @@ export default function MapCard( {busqueda}){
         />
         ))
     } 
-    if (busqueda == '' || busqueda == ' '){
+    let Filter = (array) => {
+        var newData = (array.filter(v => v.name.includes(busqueda)));
+        return Map(newData);
+    }
+    if (busqueda == ''){
         return(
         <div className='MapCard' >
             {Map(data.results)}
         </div>
         )
     } else {
-        var newData = [];
-        for (let i = 0; i < data.results.length; i++) {
-            if (data.results[i].name.includes(busqueda)){
-                newData.push(data.results[i]);
-            }
-        }
         return (
             <div className='MapCard' >
-                {Map(newData)}
+                {/* {Map(newData)} */}
+                {Filter(data.results)}
             </div>
         )
+        // var newData = [];
+        // for (let i = 0; i < data.results.length; i++) {
+        //     if (data.results[i].name.includes(busqueda)){
+        //         newData.push(data.results[i]);
+        //     }
+        // }
     }
 }
